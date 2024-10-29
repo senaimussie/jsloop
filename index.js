@@ -33,7 +33,5 @@ delay(x);
 
 
 
-const newst = ['one', 'two', 'Three'];
-onesec(newst);
 
 
