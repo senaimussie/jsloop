@@ -17,13 +17,20 @@ for( var i in data){
     console.log(`${i}: --- ${data[i]}` );
 }
 
-function onesec(string) {
-    for (let i in string) {
-        setTimeout(() => {
-            console.log(string[i]);
-        }, i * 1000); 
+function delay(stringe) {
+    for (let i in stringe) {
+        setTimeout(function() {
+            console.log(stringe[i]);
+        }, 1000 * (parseInt(i) + 1)); 
     }
 }
+
+// Example usage
+const x = 'three';
+delay(x); 
+
+
+
 
 
 const newst = ['one', 'two', 'Three'];
